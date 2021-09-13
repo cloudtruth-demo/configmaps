@@ -1,0 +1,8 @@
+resources:
+- deployment.yaml
+configMapGenerator:
+- name: kustomized-configmap
+#  files:
+#    - game.properties
+  envs:
+  - .env
